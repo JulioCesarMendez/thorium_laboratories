@@ -23,31 +23,6 @@
                 </xpath>
             </field>
         </record>
-        <!-- Include the Laboratory Test into the Commed Patient Disease Form - - >
-        <record model="ir.ui.view" id="thoriumcorp_patient_disease_form">
-            <field name="name">thoriumcorp_patient_disease_form</field>
-            <field name="model">thoriumcorp.patient_disease</field>
-            <field name="inherit_id" ref="thoriumcorp_disease.thoriumcorp_patient_view_disease_form"/>
-            <field name="arch" type="xml">
-                <xpath expr="//group[@name='complementary_informations']" position="before">
-                    <group string="Laboratory" colspan="4" id="group_lab_info">
-                        <field name="lab_confirmed"/>
-                        <field name="lab_test"
-                            attrs="{'invisible': [('lab_confirmed','=', False)]}"/>
-                    </group>
-                </xpath>
-            </field>
-        </record>
-        <record model="ir.ui.view" id="thoriumcorp_patient_disease_tree">
-            <field name="name">thoriumcorp_patient_disease_tree</field>
-            <field name="model">thoriumcorp.patient_disease</field>
-            <field name="inherit_id" ref="thoriumcorp_disease.thoriumcorp_patient_view_disease_tree"/>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='state']" position="after">
-                    <field name="lab_confirmed"/>
-                </xpath>
-            </field>
-        </record -->
         <!-- Commed Patient Lab Test -->
         <record model="ir.actions.act_window" id="thoriumcorp_lab_test_requests_action">
             <field name="name">Lab Test</field>
@@ -74,23 +49,18 @@
                                     name="get_result"
                                     icon="fa-flask">
                             </button>
-                            <field name="result_count" 
-                                    invisible="1" />
+                            <field name="result_count" /> <!--invisible="1" /-->
                         </div>
-                        <!-- group col="6" colspan="4">
-                            <field name="name" />
-                            <field name="category"
-                                    options="{'no_create_edit': True}" />
-                        </group-->
                         <group>
                             <group>
-                                <field name="patient_id" options="{'no_create_edit': True}" />
-                                <field name="test_type" options="{'no_create_edit': True}" />
+                                <field name="identity_id" options="{'create_edit': True}"/> <!-- options="{'no_create_edit': True}" /-->
+                                <!--field name="patient_id" options="{'create_edit': True}"/ --> <!-- options="{'no_create_edit': True}" /-->
+                                <field name="test_type" /> <!--options="{'no_create_edit': True}" /-->
                                 <field name="date" />
                             </group>
                             <group>
                                 <!-- field name="doctor_id" options="{'no_create_edit': True}" / -->
-                                <field name="referenced_by" options="{'no_create_edit': True}" />
+                                <field name="referenced_by" /> <!--options="{'no_create_edit': True}" /-->
                                 <field name="urgent" />
                                 <field name="state" readonly="1" />
                             </group>
@@ -106,14 +76,13 @@
                 <tree
                     decoration-danger="(urgent)">
                     <field name="name" />
-                    <field name="date"
-                            widget="date" />
+                    <field name="date" widget="date" />
                     <field name="test_type" />
-                    <field name="patient_id" />
+                    <field name="identity_id" />
+                    <!--field name="patient_id" /-->
                     <!-- field name="doctor_id" / -->
                     <field name="referenced_by" />
-                    <field name="state"
-                            readonly="1" />
+                    <field name="state" readonly="1" />
                     <field name="urgent" />
                 </tree>
             </field>
@@ -145,14 +114,13 @@
                                     <field name="test" />
                                     <field name="date_analysis" />
                                     <newline />
-                                    <field name="patient"
-                                        options="{'no_create_edit': True}" />
+                                    <field name="patient" /> <!--options="{'no_create_edit': True}" /-->
                                     <field name="pathologist" />
                                     <newline />
                                     <field name="date_requested" />
                                     <field name="requestor" />
                                     <field name="test_request" />
-                                    <field name="pathology" />
+                                    <!--field name="pathology" /-->
                                     <newline />
                                     <field name="value"
                                         colspan="4"
@@ -331,6 +299,7 @@
                     <field name="active" />
                     <field name="name" />
                     <field name="code" />
+                    <field name="product_id" />
                 </tree>
             </field>
         </record>

@@ -21,10 +21,16 @@
     'website': "https://thoirumcorp.website",
     'category': 'Thoriumcorp',
     'version': '13.0.0.0.1',
-    'depends': ['base'],
+    'depends': ['base', 'mail', 'product', 'contacts'],
     'data': [
+#        'security/ir.model.access.csv',
+#        'views/thoriumcorp_partner.xml',
+        'views/medical_abstract_entity.xml',
+        'views/thoriumcorp_patient.xml',
         'views/thoriumcorp_lab_view.xml',
         'data/thoriumcorp_lab_sequences.xml',
+        # 'wizard/create_lab_test.xml',
+        # 'security/access_rights.xml'
     ],
     'demo': [],
     'installable': True,
