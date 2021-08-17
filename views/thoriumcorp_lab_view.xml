@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--                                                                       -->
+<!--    Copyright (C) 2020-2030 Thorium Corp FP <help@thoriumcorp.website  -->
+<!--                                                                       -->
+
 <odoo>
     <data>
         <!-- Include the Laboratory Test into the Patient History -->
@@ -12,7 +16,7 @@
                     <page string="Laboratory">
                         <notebook>
                             <page name="Laboratory_info" string="Laboratory Info">
-                                <group string="Labs Test">
+                                <group string="Labs Test Requests">
                                     <field name="lab_test_ids"
                                         string="Tests"
                                         context="{'default_patient_id': id}" />
@@ -23,9 +27,9 @@
                 </xpath>
             </field>
         </record>
-        <!-- Commed Patient Lab Test -->
+        <!-- Thorium Corp  Patient Lab Test -->
         <record model="ir.actions.act_window" id="thoriumcorp_lab_test_requests_action">
-            <field name="name">Lab Test</field>
+            <field name="name">Lab Test Requests</field>
             <field name="res_model">thoriumcorp.lab.test.requests</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -43,28 +47,42 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <div class="oe_button_box" name="button_box">
-                            <button class="oe_stat_button"
-                                    type="object"
-                                    name="get_result"
-                                    icon="fa-flask">
-                            </button>
-                            <field name="result_count" /> <!--invisible="1" /-->
-                        </div>
-                        <group>
-                            <group>
-                                <field name="identity_id" options="{'create_edit': True}"/> <!-- options="{'no_create_edit': True}" /-->
-                                <!--field name="patient_id" options="{'create_edit': True}"/ --> <!-- options="{'no_create_edit': True}" /-->
-                                <field name="test_type" /> <!--options="{'no_create_edit': True}" /-->
-                                <field name="date" />
-                            </group>
-                            <group>
-                                <!-- field name="doctor_id" options="{'no_create_edit': True}" / -->
-                                <field name="referenced_by" /> <!--options="{'no_create_edit': True}" /-->
-                                <field name="urgent" />
-                                <field name="state" readonly="1" />
-                            </group>
-                        </group>
+                        <notebook>
+                            <page string="Main Info" id="lab_main_info">
+                                <!--div class="oe_button_box" name="button_box">
+                                    <button class="oe_stat_button"
+                                            type="object"
+                                            name="get_result"
+                                            icon="fa-flask">
+                                    </button>
+                                    <field name="result_count" />
+                                </div-->
+                                <group>
+                                    <group>
+                                        <field name="identity_id" options="{'create_edit': True}"/>
+                                        <field name="test_type" />
+                                        <field name="date" />
+                                    </group>
+                                    <group>
+                                        <field name="referenced_by" />
+                                        <field name="urgent" />
+                                        <field name="state" readonly="1" />
+                                    </group>
+                                </group>
+                            </page>
+                            <!--page string="Información de Pago" id="lab_test_pay_info">
+                                <group id="lab_test_pay_method_info" colspan="4">
+                                    <separator colspan="4" string="Detalles de pago:" id="separator_notes" />
+                                    <group>
+                                        <field name="amount"/>
+                                        <field name="pay_status" />
+                                        <field name="pay_method" />
+                                        <field name="pay_ref" />
+                                        <! - -field name="pay_status" / - - >
+                                    </group>
+                                </group>
+                            </page -->
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -73,21 +91,19 @@
             <field name="name">thoriumcorp_lab_test_requests_tree</field>
             <field name="model">thoriumcorp.lab.test.requests</field>
             <field name="arch" type="xml">
-                <tree
-                    decoration-danger="(urgent)">
-                    <field name="name" />
+                <tree decoration-danger="(urgent)">
+                    <field name="name" options="{'create_edit': True}" />
                     <field name="date" widget="date" />
                     <field name="test_type" />
                     <field name="identity_id" />
-                    <!--field name="patient_id" /-->
-                    <!-- field name="doctor_id" / -->
                     <field name="referenced_by" />
                     <field name="state" readonly="1" />
                     <field name="urgent" />
+                    <!--field name="pay_status" /-->
                 </tree>
             </field>
         </record>
-        <!-- Commed Lab Test Results -->
+        <!-- Thorium Corp  Lab Test Results -->
         <record model="ir.actions.act_window" id="thoriumcorp_lab_test_result_action">
             <field name="name">Lab Test Results</field>
             <field name="res_model">thoriumcorp.lab.test.result</field>
@@ -109,31 +125,36 @@
                     <sheet>
                         <notebook>
                             <page string="Main Info" id="lab_main_info">
+                                <div class="oe_button_box" name="button_box">
+                                </div>
                                 <group>
-                                    <field name="name" />
-                                    <field name="test" />
+                                    <field name="name" options="{'create_edit': False}" />
+                                    <field name="date" widget="date" />
+                                    <field name="test_type" />
+                                    <field name="identity_id" />
+                                    <field name="state"/>
                                     <field name="date_analysis" />
-                                    <newline />
-                                    <field name="patient" /> <!--options="{'no_create_edit': True}" /-->
-                                    <field name="pathologist" />
-                                    <newline />
-                                    <field name="date_requested" />
+                                    <field name="urgent" />
                                     <field name="requestor" />
-                                    <field name="test_request" />
-                                    <!--field name="pathology" /-->
-                                    <newline />
-                                    <field name="value"
-                                        colspan="4"
-                                        view_ids="thoriumcorp_lab.test_result_value_view_tree_lab,thoriumcorp_lab.test_result_value_view_form_lab"/>
                                 </group>
-                            </page>
-                            <page string="Extra Info" id="lab_extra_info">
-                                <group id="lab_result_extra_info" colspan="4">
-                                    <separator colspan="4" string="Notes" id="separator_notes" />
-                                    <field name="results" />
-                                    <newline />
-                                    <separator colspan="4" string="Diagnosis" id="separator_diagnosis" />
-                                    <field name="diagnosis" />
+                                <newline  string="Resultados:" />
+                                <section class="s_two_columns bg-200 pt8 pb8" data-name="Columns">
+                                    <div class="container">
+                                        <div class="row d-flex s_nb_column_fixed">
+                                            <div class="col-lg-4 s_col_no_bgcolor pt8 pb0">
+                                                <field name="value"/>
+                                            </div>
+                                            <div class="col-lg-8 s_col_no_bgcolor pt8 pb0">
+                                                <!--field name="critearea" string=""
+                                                    view_id="thoriumcorp_lab.thoriumcorp_lab_test_critearea_ref,\
+                                                        thoriumcorp_lab.test_critearea_view_form_test_type"/-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <newline />
+                                <group>
+                                    <field name="analytes_summary" string="Comentaries:"/>
                                 </group>
                             </page>
                         </notebook>
@@ -145,17 +166,19 @@
             <field name="model">thoriumcorp.lab.test.result</field>
             <field name="name">thoriumcorp_lab_test_result_tree</field>
             <field name="arch" type="xml">
-                <tree
-                    create="false">
-                    <field name="name" />
-                    <field name="test" />
-                    <field name="test_request" />
-                    <field name="patient" />
-                    <field name="date_analysis" widget="date" />
+                <tree decoration-danger="(urgent)">
+                    <field name="name" options="{'create_edit': True}" />
+                    <field name="date" widget="date" />
+                    <field name="test_type"  options="{'create_edit': False}"/>
+                    <field name="identity_id" options="{'create_edit': False}"/>
+                    <field name="state"/>
+                    <field name="urgent" />
                     <field name="analytes_summary" />
+                    <!--field name="pay_status" /-->
                 </tree>
             </field>
         </record>
+        <!-- Thorium Corp Values of Test Result -->
         <record model="ir.ui.view" id="test_result_value_view_form_lab">
             <field name="name">test_result_value_form_lab</field>
             <field name="model">thoriumcorp.lab.test.value</field>
@@ -165,19 +188,7 @@
                     <group>
                         <field name="warning"/>
                         <field name="result"/>
-                        <field name="name"
-                            readonly="1"
-                            force_save="1" />
-                        <field name="lower_limit"
-                            readonly="1"
-                            force_save="1" />
-                        <field name="upper_limit"
-                            readonly="1"
-                            force_save="1" />
-                        <field name="units"
-                            readonly="1"
-                            force_save="1" />
-                        <!-- <field name="remarks"/> -->
+                        <field name="result_text"/>
                     </group>
                 </form>
             </field>
@@ -187,27 +198,10 @@
             <field name="model">thoriumcorp.lab.test.value</field>
             <field name="priority" eval="10"/>
             <field name="arch" type="xml">
-                <tree
-                    decoration-danger="(result &lt; lower_limit) or (result &gt; upper_limit)"
-                    decoration-success="(result &gt;= lower_limit) and (result &lt;= upper_limit)"
-                    editable="bottom"
-                    create="0"
-                    delete="0">
+                <tree>
                     <field name="warning" />
                     <field name="result" />
-                    <field name="name"
-                        readonly="1"
-                        force_save="1" />
-                    <field name="lower_limit"
-                        readonly="1"
-                        force_save="1" />
-                    <field name="upper_limit"
-                        readonly="1"
-                        force_save="1" />
-                    <field name="units"
-                        readonly="1"
-                        force_save="1" />
-                    <!-- <field name="remarks"/> -->
+                    <field name="result_text"/>
                 </tree>
             </field>
         </record>
@@ -247,7 +241,7 @@
                 </tree>
             </field>
         </record>
-        <!-- Lab Test Type -->
+        <!-- Lab Test Type - - >
         <record model="ir.actions.act_window" id="thoriumcorp_lab_test_type_action">
             <field name="name">Lab Test Types</field>
             <field name="res_model">thoriumcorp.lab.test.type</field>
@@ -264,31 +258,14 @@
         <record model="ir.ui.view" id="thoriumcorp_lab_test_type_view">
             <field name="name">thoriumcorp_lab_test</field>
             <field name="model">thoriumcorp.lab.test.type</field>
+            <field name="inherit_id" ref="product_template_form_view" />
             <field name="arch" type="xml">
-                <form>
-                    <notebook>
-                        <page string="Main Info" id="test_type_main_info">
-                            <group id="labtest_header" col="6" colspan="4">
-                                <field name="name" />
-                                <field name="code" />
-                                <field name="active" />
-                            </group>
-                            <newline />
-                            <!--group>
-                                <field name="category"
-                                        options="{'no_create_edit': True}" />
-                            </group -->
-                            <field name="critearea" colspan="4"
-                                view_ids="thoriumcorp_lab.test_critearea_view_tree_test_type,thoriumcorp_lab.test_critearea_view_form_test_type"/>
-                            <field name="product_id" />
-                        </page>
-                        <page string="Extra Info" id="test_type_extra_info">
-                            <group>
-                                <field name="info" />
-                            </group>
-                        </page>
-                    </notebook>
-                </form>
+                <xpath  expr="//div[@name=options" position="after">
+                    <div>
+                        <field name="critearea" colspan="4"
+                            view_ids="thoriumcorp_lab.test_critearea_view_tree_test_type,thoriumcorp_lab.test_critearea_view_form_test_type"/>
+                    </div>
+                </xpath>
             </field>
         </record>
         <record model="ir.ui.view" id="thoriumcorp_lab_test_type_tree">
@@ -299,20 +276,50 @@
                     <field name="active" />
                     <field name="name" />
                     <field name="code" />
-                    <field name="product_id" />
+                    <field name="categ_id" />
                 </tree>
             </field>
+        </record -->
+        <record model="ir.actions.act_window" id="thoriumcorp_lab_test_type_action">
+            <field name="name">Lab Test Types</field>
+            <field name="res_model">thoriumcorp.lab.test.type</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    No Lab Test Types registered
+                </p>
+                <p>
+                    You can add some register
+                </p>
+            </field>
         </record>
+        <record model="ir.ui.view" id="thoriumcorp_lab_test_type_view">
+            <field name="name">thoriumcorp_lab_test</field>
+            <field name="model">thoriumcorp.lab.test.type</field>
+            <field name="inherit_id" ref="product.product_template_form_view" />
+            <field name="mode">primary</field>
+            <field name="priority" eval="100" />
+            <field name="arch" type="xml">
+                <xpath  expr="//div[@name='options']" position="after">
+                    <div>
+                        <!--field name="test_type" /-->
+                        <!--field name="critearea"  colspan="4"
+                            view_ids="thoriumcorp_lab.test_critearea_view_tree_test_type,thoriumcorp_lab.test_critearea_view_form_test_type"/ -->
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <!-- Critearea -->
         <record model="ir.ui.view" id="test_critearea_view_form_test_type">
             <field name="model">thoriumcorp.lab.test.critearea</field>
-            <field name="priority" eval="20"/>
             <field name="name">test_critearea_form_test_type</field>
+            <field name="priority" eval="20"/>
             <field name="arch" type="xml">
                 <form>
                     <group>
+                        <field name="sequence"/>
                         <field name="name"/>
                         <field name="units"/>
-                        <field name="sequence"/>
                         <newline/>
                         <field name="lower_limit"/>
                         <field name="upper_limit"/>
@@ -326,8 +333,8 @@
         </record>
         <record model="ir.ui.view" id="test_critearea_view_tree_test_type">
             <field name="model">thoriumcorp.lab.test.critearea</field>
-            <field name="priority" eval="10"/>
             <field name="name">test_critearea_tree_test_type</field>
+            <field name="priority" eval="10"/>
             <field name="arch" type="xml">
                 <tree
                     editable="bottom">
@@ -391,69 +398,88 @@
                 </tree>
             </field>
         </record>
+        <record model="ir.ui.view" id="thoriumcorp_lab_test_critearea_ref">
+            <field name="name">test_critearea_tree_test_type_ref</field>
+            <field name="model">thoriumcorp.lab.test.critearea</field>
+            <field name="priority" eval="10" />
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="lower_limit" />
+                    <field name="upper_limit" />
+                </tree>
+            </field>
+        </record>
         <!-- Menu Items -->
         <menuitem
             id="thoriumcorp_root"
-            name="Laboratory"
+            name="Laboratorios"
             sequence="50"
-            web_icon="thoriumcorp_lab,static/description/icon.png"
+            web_icon="thoriumcorp_laboratories/static/description/icon.png"
         />
         <menuitem
             id="thoriumcorp_laboratory_menu"
-            name="Laboratory"
-            sequence="10"
+            name="Laboratorio"
+            sequence="51"
             parent="thoriumcorp_root"
         />
         <menuitem
             id="thoriumcorp_labtest_request"
-            name="Lab Test Requests"
-            sequence="10"
+            name="Exámenes Solicitados"
+            sequence="52"
             parent="thoriumcorp_laboratory_menu"
             action="thoriumcorp_lab_test_requests_action"
         />
         <menuitem
             id="thoriumcorp_labtest_result"
-            name="Lab Test Results"
-            sequence="20"
+            name="Resultados de Exámenes"
+            sequence="53"
             parent="thoriumcorp_laboratory_menu"
             action="thoriumcorp_lab_test_result_action"
         />
         <menuitem
             id="thoriumcorp_conf_laboratory"
-            name="Configuration"
-            sequence="20"
+            name="Configuración"
+            sequence="54"
             parent="thoriumcorp_root"
         />
         <menuitem
             id="lab_unit_conf_menu"
-            name="Lab Test Units"
-            sequence="20"
+            name="Unidades de Análisis"
+            sequence="55"
             parent="thoriumcorp_conf_laboratory"
             action="thoriumcorp_lab_test_units_action"
         />
         <menuitem
+            id="lab_crit_conf_menu"
+            name="Criterios de Análisis"
+            sequence="56"
+            parent="thoriumcorp_conf_laboratory"
+            action="thoriumcorp_lab_test_critearea_action"
+        />
+        <menuitem
             id="menu_thoriumcorp_lab_test_type_action"
-            name="Lab Test Types"
-            sequence="30"
+            name="Tipos de Exámenes"
+            sequence="57"
             parent="thoriumcorp_conf_laboratory"
             action="thoriumcorp_lab_test_type_action"
         />
-        <!--menuitem
-            id="thoriumcorp_lab_test_critearea_menu"
-            name="Lab Test Critearea"
-            sequence="40"
-            parent="thoriumcorp_conf_laboratory"
-            action="thoriumcorp_lab_test_critearea_action"
+            <!-- action="thoriumcorp_lab_test_type_action"
+            action="product.product_template_action_all"
         / -->
-        <!-- Laboratory PostInstall Actions
-        <record id="thoriumcorp_lab_test_result_action_install" model="ir.actions.client">
-            <field name="name">Laboratory Post-Install Action</field>
-            <field name="tag">reload</field>
-            <field name="params" eval="{'menu_id': ref('thoriumcorp_labtest_request')}"/>
-        </record>
-        <record id="base.open_menu" model="ir.actions.todo">
-            <field name="action_id" ref="thoriumcorp_lab_test_result_action_install"/>
-            <field name="state">open</field>
-        </record> -->
+        <menuitem
+            id="lab_centers_conf_menu"
+            name="Centros de Salud"
+            sequence="58"
+            parent="thoriumcorp_conf_laboratory"
+            action="thoriumcorp_medical_center_action"
+        />
+        <menuitem
+            id="lab_users_conf_menu"
+            name="Pacientes"
+            sequence="59"
+            parent="thoriumcorp_conf_laboratory"
+            action="thoriumcorp_patient_action"
+        />
     </data>
 </odoo>

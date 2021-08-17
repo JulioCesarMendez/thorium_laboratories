@@ -15,7 +15,7 @@
         <!-- Sequences for lab request -->
         <record id="seq_thoriumcorp_lab_request" model="ir.sequence">
             <field name="name">Lab Request</field>
-            <field name="code">thoriumcorp.patient.lab.test</field>
+            <field name="code">thoriumcorp.lab.test.requests</field>
             <field name="prefix">LRQ</field>
             <field name="padding">3</field>
         </record>

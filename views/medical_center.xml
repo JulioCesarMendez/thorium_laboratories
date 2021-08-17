@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--                                                                       -->
+<!--    Copyright (C) 2020-2030 Thorium Corp FP <help@thoriumcorp.website  -->
+<!--                                                                       -->
+
+<odoo>
+    <record id="thoriumcorp_center_view_tree" model="ir.ui.view">
+        <field name="name">thoriumcorp.center.tree</field>
+        <field name="model">medical.center</field>
+        <!--field name="mode">primary</field -->
+        <field name="arch" type="xml">
+            <tree string="Centros de Salud">
+                <field name="code" />
+                <field name="name" />
+                <field name="institution_type" />
+                <field name="public_level" />
+            </tree>
+        </field>
+    </record>
+    <record id="thoriumcorp_center_view_form" model="ir.ui.view">
+        <field name="name">thoriumcorp.center.form</field>
+        <field name="model">medical.center</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <notebook>
+                        <page string="Centro de Salud" id="center_main_info">
+                            <group>
+                                <group id="centers_header" col="4" colspan="2">
+                                    <field name="code" />
+                                    <field name="name" />
+                                    <field name="institution_type" />
+                                </group>
+                                <group id="centers_details" col="4" colspan="2">
+                                    <field name="main_specialty" />
+                                    <field name="specialties" />
+                                    <field name="public_level" />
+                                    <field name="operational_sectors" />
+                                    <field name="teaching" />
+                                    <field name="heliport" />
+                                </group>
+                                <group id="centers_other_info" col="4" colspan="2">
+                                    <field name="trauma_center" />
+                                    <field name="trauma_level"
+                                           attrs="{'invisible': [('trauma_center','=',False)]}" />
+                                    <field name="beds" />
+                                    <field name="operating_room" />
+                                    <field name="or_number"
+                                           attrs="{'invisible': [('operating_room','=',False)]}" />
+                                    <field name="extra_info" />
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="thoriumcorp_center_view_kanban" model="ir.ui.view">
+        <field name="name">thoriumcorp.center.kanban</field>
+        <field name="model">medical.center</field>
+        <field name="type">kanban</field>
+        <field name="arch" type="xml">
+            <kanban class="o_res_partner_kanban">
+                <field name="code" />
+                <field name="name" />
+                <field name="institution_type" />
+                <field name="specialties" />
+                <field name="main_specialty" />
+                <field name="public_level" />
+                <field name="operational_sectors" />
+                <field name="teaching" />
+                <field name="heliport" />
+                <field name="trauma_center" />
+                <field name="trauma_level" />
+                <field name="beds" />
+                <field name="operating_room" />
+                <field name="or_number" />
+                <field name="extra_info" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_res_partner_kanban">
+                            <div class="o_kanban_tags_section oe_kanban_partner_categories" />
+                            <div class="oe_kanban_details">
+                                <strong class="oe_partner_heading">
+                                    <field name="name" />
+                                </strong>
+                                <!--ul name="entity_details">
+                                    <li t-if="record.email.raw_value" class="o_text_overflow">
+                                        <field name="email" />
+                                    </li>
+                                </ul-->
+                                <div class="oe_kanban_partner_links" />
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="medical_center_view_search" model="ir.ui.view">
+        <field name="name">thoriumcorp.center.search</field>
+        <field name="model">medical.center</field>
+        <field name="arch" type="xml">
+            <search string="Centros de Salud">
+                <field name="name" />
+                <field name="public_level" />
+                <field name="main_specialty" />
+                <field name="operational_sectors" />
+            </search>
+        </field>
+    </record>
+    <record id="thoriumcorp_medical_center_action" model="ir.actions.act_window">
+        <field name="name">Centros de Salud</field>
+        <field name="res_model">medical.center</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <!--field
+            name="view_ids"
+            eval="[
+                (5, 0, 0),
+                (0, 0, {'view_mode': 'kanban', 'view_id': ref('thoriumcorp_center_view_kanban')}),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('thoriumcorp_center_view_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('thoriumcorp_center_view_form')}),
+            ]"
+        /-->
+    </record>
+</odoo>

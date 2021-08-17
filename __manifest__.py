@@ -8,7 +8,8 @@
         Thorium Corp Laboratories Module
     """,
     'description': """
-        Thorium Corp Laboratories Module
+        Thorium Corp Laboratories Module 
+        for remote Clinic Laboratories Management
         ################################
 
         This modules includes lab tests:
@@ -16,21 +17,19 @@
             * Values
             * Reports
             * PoS
+            * Medical-derived modules
     """,
     'author': "Thorium Corp FP",
-    'website': "https://thoirumcorp.website",
+    'website': "https://thoriumcorp.website",
     'category': 'Thoriumcorp',
-    'version': '13.0.0.0.1',
+    'version': '12.0.0.0.1',
     'depends': ['base', 'mail', 'product', 'contacts'],
     'data': [
-#        'security/ir.model.access.csv',
-#        'views/thoriumcorp_partner.xml',
-        'views/medical_abstract_entity.xml',
+        'views/thoriumcorp_menu.xml',
         'views/thoriumcorp_patient.xml',
+        'views/medical_center.xml',
         'views/thoriumcorp_lab_view.xml',
         'data/thoriumcorp_lab_sequences.xml',
-        # 'wizard/create_lab_test.xml',
-        # 'security/access_rights.xml'
     ],
     'demo': [],
     'installable': True,

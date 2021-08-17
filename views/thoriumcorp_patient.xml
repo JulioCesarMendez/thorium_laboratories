@@ -7,170 +7,190 @@
     <record id="thoriumcorp_patient_view_tree" model="ir.ui.view">
         <field name="name">thoriumcorp.patient.tree</field>
         <field name="model">thoriumcorp.patient</field>
-        <field name="inherit_id" ref="medical_abstract_entity_view_tree" />
         <field name="mode">primary</field>
         <field name="arch" type="xml">
-            <xpath expr="//tree" position="attributes">
-                <attribute name="string">Pacientes</attribute>
-            </xpath>
-            <xpath expr="//field[@name='email']" position="after">
-                <field name="identification_code" string="ID" />
-                <field name="age"/>
-                <field name="gender"/>
-            </xpath>
+            <tree string="Imaging Test Request">
+                <field name="active" />
+                <field name="identity_id"/>
+                <field name="name"/>
+                <!--field name="is_company" /-->
+                <field name="gender" attrs="{'visible': False}"/>
+                <field name="is_pregnant" attrs="{'visible': [('gender','=','female')]}" />
+                <field name="blood_type" />
+                <field name="rh" />
+                <field name="age" />
+                <field name="register_date"/>
+            </tree>
         </field>
     </record>
     <record id="thoriumcorp_patient_view_form" model="ir.ui.view">
         <field name="name">thoriumcorp.patient.form</field>
         <field name="model">thoriumcorp.patient</field>
-        <field name="inherit_id" ref="medical_abstract_entity_view_form" />
-        <field name="mode">primary</field>
-        <field name="priority" eval="100" />
         <field name="arch" type="xml">
-            <xpath expr="//form" position="attributes">
-                <attribute name="string">Paciente</attribute>
-            </xpath>
-            <xpath expr="//div[@name='buttons']" position="inside">
-                <button
-                    name="toggle_active"
-                    type="object"
-                    class="oe_stat_button"
-                    icon="fa-archive"
-                >
-                    <field
-                        name="active"
-                        widget="boolean_button"
-                        options='{"terminology": "archive"}'
-                />
-                    </button>
-            </xpath>
-            <!--xpath expr="//group[@name='main_data']">
-                <group name="main">
-                    <field
-                        name="parent_id"
-                        colspan="2"
-                        string="Representante legal"
-
-                    />
-                </group>
-            </xpath-->
-            <!-- <xpath expr="//img[@name='kanban_image_default_person']" position="replace">
-                <img
-                    name="kanban_image_default_person"
-                    t-if="record.is_company.raw_value === false"
-                    t-attf-src='{{ _s }}/thoriumcorp/static/src/img/patient-avatar.png'
-                />
-            </xpath> -->
-            <xpath expr="//notebook" position="inside">
-                <page name="thoriumcorp" string="Thoriumcorp">
-                    <group name="group_thoriumcorp_buttons" class="oe_button_box" col="6">
-                        <button
-                            name="toggle_is_pregnant"
-                            type="object"
-                            class="oe_stat_button"
-                            icon="fa-venus"
-                        >
-                            <field
-                                name="is_pregnant"
-                                widget="boolean_button"
-                                options='{
-                                    "terminology": {
-                                        "string_true": "Pregnant",
-                                        "string_hover_true": "Switch to Not Pregnant",
-                                        "string_false": "Not Pregnant",
-                                        "string_hover_false": "Switch to Pregnant"
-                                    }
-                                }'
-                            />
-                        </button>
-                    </group>
-                    <group name="group_thoriumcorp_general" string="General">
-                        <group string="Blood Info" name="blood_info">
-                            <field name="blood_type"/>
-                            <field name="rh"/>
-                            <field name="hb"/>
-                        </group>
-                        <group name="group_thoriumcorp_general_left">
-                            <field name="identification_code" />
-                            <field name="gender" />
-                        </group>
-                        <group name="group_thoriumcorp_general_right">
-                            <field name="birthdate_date" />
-                            <field name="date_death" />
-                            <field name="age" />
-                        </group>
-                    </group>
-                </page>
-            </xpath>
-            <xpath expr="//field[@name='age']" position="after">
-                <label for="weight" string="Peso" />
-                <div>
-                    <field name='weight' string="Peso" class="oe_inline" />
-                    <field
-                        name='weight_uom'
-                        class="oe_inline"
-                        placeholder="Unidad de medida"
-                        string="Unidad de medida"
-                    />
-                </div>
-            </xpath>
+            <form>
+                <sheet>
+                    <notebook>
+                        <page string="Información Vital" id="patient_main_info">
+                            <!--div class="oe_button_box" name="button_box">
+                                <button class="oe_stat_button"
+                                        type="object"
+                                        name="get_result"
+                                        icon="fa-flask">
+                                </button>
+                                <field name="result_count" />
+                            </div-->
+                            <group>
+                                <!--group-->
+                                <group>
+                                    <field name="active" />
+                                    <field name="identity_id" /> <!--options="{'create_edit': True}" /-->
+                                    <field name="title" /> <!--  options="{'create_edit': True}" /-->
+                                    <field name="name" /> <!--  options="{'create_edit': True}" /-->
+                                    <field name="is_company" />
+                                    <field name="contient" attrs="{'visible': [('is_company', '=', False)]}" />
+                                </group>
+                                <group attrs="{'visible': [('is_company', '=', False)] , 'required': [('is_company', '=', False)]}" >
+                                <!--group-->
+                                    <field name="gender" />
+                                    <field name="is_pregnant" attrs="{'visible': [('gender','=','female')]}"/>
+                                    <field name="blood_type" />
+                                    <field name="rh" />
+                                    <field name="hb" />
+                                    <field name="birthdate_date" />
+                                    <field name="age" />
+                                </group>
+                                <group>
+                                    <field name="register_date" widget="date" />
+                                    <field name="vat" options="{'create_edit': True}" />
+                                    <field name="phone" attrs="{'required': True}" />
+                                    <field name="mobile" />
+                                    <field name="email" options="{'create_edit': True}" attrs="{'required': True}" />
+                                    <field name="email_formatted" />
+                                    <field name="user_id" attrs="{'required': ['|',('age', 'not in', ['0','1','2','3','4','5','6','7','8','9''10','11','12','13','14','15','16','17']),('is_company','=', True)]}" />
+                                    <!-- field name="user_id" attrs="{'required': [('age', '<', '17')|('is_company','=', True)]}" / -->
+                                </group>
+                                <group>
+                                    <field name="ref" options="{'create_edit': True}" />
+                                    <field name="is_patient" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="patient_of_medical_center_id" attrs="{'required': [('is_patient', '=', False)]}" />
+                                    <field name="critical_summary" attrs="{'required': [('contient', '=', True)]}" />
+                                    <field name="employee" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="function" attrs="{'visible': [('employee','=', True)]}"/>
+                                    <field name="deceased" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="date_death" attrs="{'required': [('deceased', '=', True)]}" />
+                                    <field name="unidentified" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="marital_status" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="weight" attrs="{'visible': [('is_company', '=', False)]}" />
+                                    <field name="weight_uom" comodel_name="uom.uom" /> <!-- domain="[('is_company', '=', False)]" /-->
+                                </group>
+                            </group>
+                            <!--/group-->
+                        </page>
+                        <page string="Información adicional de contacto" id="patient_aditional_info">
+                            <group id="patient_adicional_general_info" colspan="4">
+                                <separator colspan="4" string="Dirección principal:" id="separator_info" />
+                                <group>
+                                    <field name="type" />
+                                    <field name="street" />
+                                    <field name="street2" />
+                                    <field name="zip" />
+                                    <field name="city" />
+                                    <field name="state_id" />
+                                    <field name="country_id" />
+                                    <field name="patient_latitude" />
+                                    <field name="patient_longitude" />
+                                    <field name="lang" />
+                                    <field name="tz" />
+                                    <field name="tz_offset" />
+                                    <field name="same_vat_patient_id" />
+                                    <field name="website" />
+                                    <field name="comment" />
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Información general adicional" id="patient_general_aditional_info">
+                            <group id="lab_test_pay_method_info" colspan="4">
+                                <separator colspan="4" string="Información complementaria:" id="separator_notes_add" />
+                                <group>
+                                    <field name="industry_id" />
+                                    <field name="company_type" />
+                                    <field name="company_id" />
+                                    <field name="company_name" />
+                                    <field name="general_info" />
+                                    <field name="critical_info" />
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
         </field>
     </record>
     <record id="thoriumcorp_patient_view_kanban" model="ir.ui.view">
         <field name="name">thoriumcorp.patient.kanban</field>
         <field name="model">thoriumcorp.patient</field>
-        <field name="inherit_id" ref="medical_abstract_entity_view_kanban" />
-        <field name="mode">primary</field>
-        <field name="priority" eval="100" />
+        <field name="type">kanban</field>
         <field name="arch" type="xml">
-            <xpath expr="//kanban" position="attributes">
-                <attribute name="string">Pacientes</attribute>
-            </xpath>
-            <xpath expr="//templates" position="before">
-                <field name="birthdate_date" string="DOB" />
-            </xpath>
-            <xpath expr="//ul[@name='entity_details']/li" position="before">
-                <li name="field_dob" t-if="record.birthdate_date.raw_value">
-                    <strong>DOB:</strong> <field name="birthdate_date" />
-                </li>
-                <li name="field_age_gender" t-if="record.birthdate_date.raw_value &amp;&amp; record.gender.raw_value">
-                    <field name="age"/> - <field name="gender"/>
-                </li>
-                <li name="field_gender" t-if="! record.birthdate_date.raw_value &amp;&amp; record.gender.raw_value">
-                    <field name="gender"/>
-                </li>
-            </xpath>
-            <!-- <xpath expr="//img[@name='kanban_image_default_person']" position="replace">
-                <img
-                    name="kanban_image_default_person"
-                    t-if="record.is_company.raw_value === false"
-                    t-attf-src='{{ _s }}/thoriumcorp/static/src/img/patient-avatar.png'
-                />
-            </xpath> -->
+            <kanban class="o_res_partner_kanban">
+                <field name="identity_id" />
+                <field name="name" />
+                <field name="title" />
+                <field name="email" />
+                <field name="is_company" />
+                <field name="function" />
+                <field name="phone" />
+                <field name="street" />
+                <field name="street2" />
+                <field name="zip" />
+                <field name="city" />
+                <field name="country_id" />
+                <field name="mobile" />
+                <field name="state_id" />
+                <!--field name="category_id" /-->
+                <field name="type" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_res_partner_kanban">
+                            <div class="o_kanban_tags_section oe_kanban_partner_categories" />
+                            <div class="oe_kanban_details">
+                                <strong class="oe_partner_heading">
+                                    <field name="name" />
+                                </strong>
+                                <ul name="entity_details">
+                                    <li t-if="record.email.raw_value" class="o_text_overflow">
+                                        <field name="email" />
+                                    </li>
+                                </ul>
+                                <div class="oe_kanban_partner_links" />
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
         </field>
     </record>
-
     <record id="thoriumcorp_patient_view_search" model="ir.ui.view">
         <field name="name">thoriumcorp.patient.search</field>
         <field name="model">thoriumcorp.patient</field>
-        <field name="inherit_id" ref="medical_abstract_entity_view_search" />
-        <field name="mode">primary</field>
         <field name="arch" type="xml">
-            <xpath expr="//search" position="attributes">
-                <attribute name="string">Pacientes</attribute>
-            </xpath>
-            <xpath expr="//field[@name='category_id']" position="after">
-                <field name="birthdate_date" />
-                <field name="age" />
-                <field name="identification_code" />
-            </xpath>
-            <!-- <xpath expr="//filter" position="after">
+            <search string="Pacientes Activos">
+                <field name="identity_id" />
+                <field name="name" />
+                <field name="is_company" />
+                <field name="register_date"/>
+                <field name="vat"/>
                 <filter
-                    string="DoB"
-                    domain="[]"
-                    context="{'group_by':'birthdate_date'}"
+                    name="deactivated"
+                    string="Deactivated"
+                    domain="[('active', '=', 0)]"
                 />
-            </xpath> -->
+                <filter
+                    name="tag"
+                    string="Tag"
+                    domain="[]"
+                    context="{'group_by':'is_company'}"
+                />
+            </search>
         </field>
     </record>
     <record model="ir.actions.act_window" id="thoriumcorp_patient_action">
