@@ -1,0 +1,2476 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * thoriumcorp_laboratories
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: Julio César Méndez <mendezjcx@thoriumcorp.website>\n"
+"POT-Creation-Date: 2020-10-12 12:00+0000\n"
+"PO-Revision-Date: 2020-10-12 12:00+0000\n"
+"Last-Translator: Julio César Méndez <mendezjcx@thoriumcorp.website>, 2020\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: thoriumcorp_laboratories
+#: code:addons/thoriumcorp_laboratories/models/thoriumcorp_patient.py:0
+#, python-format
+msgid " (deceased)"
+msgstr " (fallecido)"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "(edit)"
+msgstr "(editar)"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.view_res_partner_form
+msgid "<span class=\"o_stat_text\">Paciente(s)</span>"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_kanban
+msgid "<strong>DOB:</strong>"
+msgstr "<strong>F.N.:</strong>"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_needaction
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_needaction
+msgid "Action Needed"
+msgstr "Requiere acción"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__active
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__active_lang_count
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__active_lang_count
+msgid "Active Lang Count"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_exception_decoration
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_state
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__additional_info
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__additional_info
+msgid "Additional info"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Address"
+msgstr "Dirección"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__type
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__type
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__type
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__type
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__age
+msgid "Age (computed)"
+msgstr "Edad (calculada)"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__lang
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__lang
+msgid ""
+"All the emails and documents sent to this contact will be translated in this"
+" language."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_assistant
+msgid "Assistant"
+msgstr "Asistente"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_attachment_count
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__bank_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__bank_ids
+msgid "Banks"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__is_blacklisted
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__is_blacklisted
+msgid "Blacklist"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_bounce
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_bounce
+msgid "Bounce"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_center_manager
+msgid "Center Manager"
+msgstr "Gerente de centro"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__channel_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__channel_ids
+msgid "Channels"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__is_company
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__employee
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__employee
+msgid "Check this box if this contact is an Employee."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__city
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__city
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "City"
+msgstr "Ciudad"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__color
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__color
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__commercial_partner_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__commercial_partner_id
+msgid "Commercial Entity"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__alias
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__alias
+#: model:ir.model.fields,help:thoriumcorp.field_res_partner__alias
+#: model:ir.model.fields,help:thoriumcorp.field_res_users__alias
+msgid "Common, not official, name"
+msgstr "Nombre común, no oficial"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.ui.menu,name:thoriumcorp_laboratories.thoriumcorp_root
+msgid "Community Medical"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__company_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__company_id
+msgid "Company"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_manager
+msgid "Company Manager"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__commercial_company_name
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__commercial_company_name
+msgid "Company Name Entity"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__company_type
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__company_type
+msgid "Company Type"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__partner_gid
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__partner_gid
+msgid "Company database ID"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__contact_address
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__contact_address
+msgid "Complete Address"
+msgstr "Dirección completa"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.ui.menu,name:thoriumcorp_laboratories.thoriumcorp_root_sub
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model,name:thoriumcorp_laboratories.model_res_partner
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__child_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__child_ids
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Contact book"
+msgstr "Agenda"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Contacts / Addresses"
+msgstr "Contactos / Direcciones"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__count_patients
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__count_patients
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__count_patients
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__count_patients
+msgid "Count Patients"
+msgstr "Cantidad de pacientes"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_bounce
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Country"
+msgstr "País"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__create_uid
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__create_date
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__credit_limit
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__credit_limit
+msgid "Credit Limit"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__birthdate_date
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__birthdate_date
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__birthdate_date
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__birthdate_date
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_kanban
+msgid "DOB"
+msgstr "F.N."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__date
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_search
+msgid "Deactivated"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__date_death
+msgid "Deceased date"
+msgstr "Fecha de muerte"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__display_name
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__thoriumcorp_patient__marital_status__d
+msgid "Divorced"
+msgstr "Divorc."
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_doctor
+msgid "Doctor"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__partner_share
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__partner_share
+msgid ""
+"Either customer (not a user), either shared user. Indicated the current "
+"partner is a customer without access or with a limited access created for "
+"sharing data."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__email
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__email
+msgid "Email"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__employee
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__employee
+msgid "Employee"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__state_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__state_id
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__state_id
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__state_id
+msgid "Estado"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__res_partner__gender__female
+msgid "Female"
+msgstr "Femenino"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__phone_sanitized
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__phone_sanitized
+msgid ""
+"Field used to store sanitized phone number. Helps speeding up searches and "
+"comparisons."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_follower_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_channel_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_partner_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__email_formatted
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__email_formatted
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__email_formatted
+msgid "Formatted Email"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__gender
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__gender
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__gender
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__gender
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Gender"
+msgstr "Género"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "General"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__partner_latitude
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__partner_latitude
+msgid "Geo Latitude"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__partner_longitude
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__partner_longitude
+msgid "Geo Longitude"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__id
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_tree
+msgid "ID"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__im_status
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__im_status
+msgid "IM Status"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_exception_icon
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__activity_exception_icon
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__identification_code
+msgid "Identificación del paciente provista por el centro de salud"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__identification_code
+msgid "Identificación interna"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__vat
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__vat
+msgid "Identification Number"
+msgstr "Número de Id."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__vat
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__vat
+msgid "Identification Number for selected type"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_needaction
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_unread
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_needaction
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_error
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_sms_error
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_has_error
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__is_blacklisted
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__phone_blacklisted
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__is_blacklisted
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__phone_blacklisted
+msgid ""
+"If the email address is on the blacklist, the contact won't receive mass "
+"mailing anymore, from any list"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__image1920
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__image1920
+msgid "Image"
+msgstr "Imagen"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__image_1024
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__image_1024
+msgid "Image 1024"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__image_128
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__image_128
+msgid "Image 128"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__image_256
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__image_256
+msgid "Image 256"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__image_512
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__image_512
+msgid "Image 512"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__industry_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__industry_id
+msgid "Industry"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Informacion de contacto"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__general_info
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Información General"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Internal Note..."
+msgstr "Notas internas"
+
+#. module: thoriumcorp_laboratories
+#: code:addons/thoriumcorp_laboratories/models/thoriumcorp_patient.py:0
+#, python-format
+msgid "Invalid operator: %s"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: code:addons/thoriumcorp_laboratories/models/thoriumcorp_patient.py:0
+#, python-format
+msgid "Invalid selection - Only a `Female` may be pregnant."
+msgstr "Selección no válida. Aplica sólo a mujeres."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__type
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__type
+#: model:ir.model.fields,help:thoriumcorp.field_res_partner__type
+#: model:ir.model.fields,help:thoriumcorp.field_res_users__type
+msgid ""
+"Invoice & Delivery addresses are used in sales orders. Private addresses are"
+" only visible by authorized users."
+msgstr ""
+"Las direcciones de facturación y de entrega son usadas en órdenes de venta. "
+"Las direcciones privadas sólo son visibles por usuarios autorizados."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__is_deceased
+msgid "Is Deceased"
+msgstr "Falleció"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_is_follower
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__is_pregnant
+msgid "Is Pregnant"
+msgstr "Está embarazada"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__is_company
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__is_company
+msgid "Is a Company"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__function
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__function
+msgid "Job Position"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__lang
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__lang
+msgid "Language"
+msgstr "Idioma"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity____last_update
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__write_uid
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__write_date
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_main_attachment_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__res_partner__gender__male
+msgid "Male"
+msgstr "Masculino"
+
+#. module: thoriumcorp_laboratories
+#. openerp-web
+#: code:addons/thoriumcorp_laboratories/static/src/js/thoriumcorp_laboratories.tour.js:0
+#, python-format
+msgid "Manage electronic thoriumcorp records using the <b>Community Medical</b> app."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__marital_status
+msgid "Marital Status"
+msgstr "Estado civil"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__thoriumcorp_patient__marital_status__m
+msgid "Married"
+msgstr "Casad."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model,name:thoriumcorp_laboratories.model_thoriumcorp_abstract_entity
+msgid "Medical Abstract Entity"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_search
+msgid "Medical Entities"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model,name:thoriumcorp_laboratories.model_thoriumcorp_patient
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__res_partner__type__thoriumcorp_patient
+msgid "Medical Patient"
+msgstr "Paciente médico"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_tree
+msgid "Medical entity"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "Medico"
+msgstr "Médica"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_error
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__mobile
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__mobile
+msgid "Mobile"
+msgstr "Celular"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Mobile:"
+msgstr "Celular:"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__name
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__name
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_date_deadline
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_summary
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_type_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__alias
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__alias
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__alias
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__alias
+msgid "Nickname"
+msgstr "Apodo"
+
+#. module: thoriumcorp_laboratories
+#: code:addons/thoriumcorp_laboratories/models/thoriumcorp_patient.py:0
+#, python-format
+msgid "No DoB"
+msgstr "Sin F.N."
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Nombre de contacto"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__company_name
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__company_name
+msgid "Nombre de la empresa/institución"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__email_normalized
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__email_normalized
+msgid "Normalized Email"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Nota interna..."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Notas"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__comment
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__comment
+msgid "Notes"
+msgstr "Notas"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_needaction_counter
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_error_counter
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_needaction_counter
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_error_counter
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__message_unread_counter
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__res_partner__gender__other
+msgid "Other"
+msgstr "Otro"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__ref
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__ref
+msgid "PUID"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__patient_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__patient_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__patient_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__patient_ids
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "Paciente"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.actions.act_window,name:thoriumcorp_laboratories.thoriumcorp_patient_action
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_kanban
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_search
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_tree
+msgid "Pacientes"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_search
+msgid "Parent"
+msgstr "Padre/Madre"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__parent_name
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__parent_name
+msgid "Parent name"
+msgstr "Nombre de padre/madre"
+
+#. module: thoriumcorp_laboratories
+#: code:addons/thoriumcorp_laboratories/models/res_partner.py:0
+#, python-format
+msgid "Partners cannot be born in the future."
+msgstr "No puede haber nacido en el futuro."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.ui.menu,name:thoriumcorp_laboratories.thoriumcorp_patient
+#: model:ir.ui.menu,name:thoriumcorp_laboratories.thoriumcorp_patient_root
+msgid "Patients"
+msgstr "Pacientes"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__country_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__country_id
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__country_id
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__country_id
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "País"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__ref
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__ref
+msgid "Person Unique Identifier"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "Peso"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__phone
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__phone_blacklisted
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__phone_blacklisted
+msgid "Phone Blacklisted"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__property_product_pricelist
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__property_product_pricelist
+msgid "Pricelist"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__parent_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__parent_id
+msgid "Related Company"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__partner_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__partner_id
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_search
+msgid "Related Partner"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "Representante legal"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__activity_user_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_has_sms_error
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__user_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__user_id
+msgid "Salesperson"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__phone_sanitized
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__phone_sanitized
+msgid "Sanitized Number"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__self
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__self
+msgid "Self"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__thoriumcorp_patient__marital_status__x
+msgid "Separated"
+msgstr "Separad."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__partner_share
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__partner_share
+msgid "Share Partner"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__signup_expiration
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__signup_expiration
+msgid "Signup Expiration"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__signup_token
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__signup_token
+msgid "Signup Token"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__signup_type
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__signup_type
+msgid "Signup Token Type"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__signup_valid
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__signup_valid
+msgid "Signup Token is Valid"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__signup_url
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__signup_url
+msgid "Signup URL"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__thoriumcorp_patient__marital_status__s
+msgid "Single"
+msgstr "Solter."
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "State"
+msgstr "Estado"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__activity_state
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__street
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__street
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Street"
+msgstr "Calle"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Street 2"
+msgstr "Casa/Edificio"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Street 2..."
+msgstr "Casa/Edificio"
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "Street..."
+msgstr "Calle"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__street2
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__street2
+msgid "Street2"
+msgstr "Casa/Edificio"
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_configurator
+msgid "System Administrator"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_search
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__category_id
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__category_id
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__user_id
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__user_id
+msgid "The internal user in charge of this contact."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__email_normalized
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__email_normalized
+msgid ""
+"This field is used to search on email address as the primary email field can"
+" contain more than strictly an email address."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__property_product_pricelist
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__tz
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__tz
+msgid "Timezone"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__tz_offset
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__tz_offset
+msgid "Timezone offset"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__title
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__title
+msgid "Title"
+msgstr "Título"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__activity_exception_decoration
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_patient_view_form
+msgid "Unidad de medida"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_unread
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__message_unread_counter
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:res.groups,name:thoriumcorp_laboratories.group_thoriumcorp_user
+msgid "User"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__user_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__user_ids
+msgid "Users"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__website
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__website
+msgid "Website Link"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__website_message_ids
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__website_message_ids
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__weight
+msgid "Weight"
+msgstr "Peso"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__weight
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__weight
+msgid "weight"
+msgstr "peso"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__weight_uom
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__weight_uom
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_partner__weight_uom
+#: model:ir.model.fields,field_description:thoriumcorp.field_res_users__weight_uom
+msgid "Weight unit"
+msgstr "Unidad de peso"
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_abstract_entity__tz
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__tz
+msgid ""
+"When printing documents and exporting/importing data, time values are computed according to this timezone.\n"
+"If the timezone is not set, UTC (Coordinated Universal Time) is used.\n"
+"Anywhere else, time values are computed according to the time offset of your web client."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields.selection,name:thoriumcorp_laboratories.selection__thoriumcorp_patient__marital_status__w
+msgid "Widow(er)"
+msgstr "Viud."
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "ZIP"
+msgstr "C.P."
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_abstract_entity__zip
+#: model:ir.model.fields,field_description:thoriumcorp.field_thoriumcorp_patient__zip
+msgid "Zip"
+msgstr "C.P."
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "e.g. Mr."
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model_terms:ir.ui.view,arch_db:thoriumcorp_laboratories.thoriumcorp_abstract_entity_view_form
+msgid "e.g. Sales Director"
+msgstr ""
+
+#. module: thoriumcorp_laboratories
+#: model:ir.model.fields,help:thoriumcorp.field_thoriumcorp_patient__is_pregnant
+msgid "¿Esta embarazada?"
+msgstr ""
+
+# msgid ""
+# msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:thoriumcorp.lab.test.units:"
+msgid "The Unit name must be unique"
+msgstr ""
+
+msgctxt "error:thoriumcorp.lab.test_type:"
+msgid "The Lab Test code must be unique"
+msgstr ""
+
+msgctxt "error:thoriumcorp.lab:"
+msgid "The test ID code must be unique"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,analytes_summary:"
+msgid "Summary"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,create_date:"
+msgid "Create Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,critearea:"
+msgid "Lab Test Critearea"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,date_analysis:"
+msgid "Date of the Analysis"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,date_requested:"
+msgid "Date requested"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,diagnosis:"
+msgid "Diagnosis"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,name:"
+msgid "ID"
+msgstr ""
+
+# msgctxt "field:thoriumcorp.lab,pathologist:"
+# msgid "Pathologist"
+# msgstr ""
+
+msgctxt "field:thoriumcorp.lab,patient:"
+msgid "Patient"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,rec_name:"
+msgid "Record Name"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,request_order:"
+msgid "Request"
+msgstr ""
+
+# msgctxt "field:thoriumcorp.lab,requestor:"
+# msgid "Physician"
+# msgstr ""
+
+msgctxt "field:thoriumcorp.lab,results:"
+msgid "Results"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,test:"
+msgid "Test type"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.create.init,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,create_date:"
+msgid "Create Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,excluded:"
+msgid "Excluded"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,thoriumcorp_lab_id:"
+msgid "Test Cases"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,lab_warning_icon:"
+msgid "Lab Warning Icon"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,lower_limit:"
+msgid "Lower Limit"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,name:"
+msgid "Analyte"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,normal_range:"
+msgid "Reference"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,rec_name:"
+msgid "Record Name"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,remarks:"
+msgid "Remarks"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,result:"
+msgid "Value"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,result_text:"
+msgid "Result - Text"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,sequence:"
+msgid "Sequence"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,test_type_id:"
+msgid "Test type"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,units:"
+msgid "Units"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,upper_limit:"
+msgid "Upper Limit"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,warning:"
+msgid "Warn"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.critearea,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,code:"
+msgid "Code"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,create_date:"
+msgid "Create Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,name:"
+msgid "Unit"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,rec_name:"
+msgid "Record Name"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test.units,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,active:"
+msgid "Active"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,code:"
+msgid "Code"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,create_date:"
+msgid "Create Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,critearea:"
+msgid "Test Cases"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,info:"
+msgid "Description"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,name:"
+msgid "Test"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,product_id:"
+msgid "Service"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,rec_name:"
+msgid "Record Name"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.lab.test_type,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient,lab_test_ids:"
+msgid "Lab Tests Required"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,create_date:"
+msgid "Create Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,create_uid:"
+msgid "Create User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,date:"
+msgid "Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,doctor_id:"
+msgid "Doctor"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,name:"
+msgid "Test Type"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,patient_id:"
+msgid "Patient"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,rec_name:"
+msgid "Record Name"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,request:"
+msgid "Order"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,state:"
+msgid "State"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,urgent:"
+msgid "Urgent"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,write_date:"
+msgid "Write Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test,write_uid:"
+msgid "Write User"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,date:"
+msgid "Date"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,doctor:"
+msgid "Doctor"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,patient:"
+msgid "Patient"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,tests:"
+msgid "Tests"
+msgstr ""
+
+msgctxt "field:thoriumcorp.patient.lab.test.request.start,urgent:"
+msgid "Urgent"
+msgstr ""
+
+msgctxt "field:thoriumcorp.request-test,id:"
+msgid "ID"
+msgstr ""
+
+msgctxt "field:thoriumcorp.request-test,request:"
+msgid "Request"
+msgstr ""
+
+msgctxt "field:thoriumcorp.request-test,test:"
+msgid "Test"
+msgstr ""
+
+msgctxt "field:thoriumcorp.sequence.setup,lab_request_sequence:"
+msgid "Lab Request Sequence"
+msgstr ""
+
+msgctxt "field:thoriumcorp.sequence.setup,lab_sequence:"
+msgid "Lab Result Sequence"
+msgstr ""
+
+msgctxt "field:thoriumcorp.sequences,lab_request_sequence:"
+msgid "Patient Lab Request Sequence"
+msgstr ""
+
+msgctxt "field:thoriumcorp.sequences,lab_sequence:"
+msgid "Lab Sequence"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab,name:"
+msgid "Lab result ID"
+msgstr ""
+
+# msgctxt "help:thoriumcorp.lab,pathologist:"
+# msgid "Pathologist"
+# msgstr ""
+
+msgctxt "help:thoriumcorp.lab,patient:"
+msgid "Patient ID"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab,requestor:"
+msgid "Doctor who requested the test"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab,test:"
+msgid "Lab test type"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab.test.critearea,excluded:"
+msgid "Select this option when this analyte is excluded from the test"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab.test.critearea,result_text:"
+msgid ""
+"Non-numeric results. For example qualitative values, morphological, colors "
+"..."
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab.test.critearea,warning:"
+msgid ""
+"Warns the patient about this  analyte result It is useful to contextualize "
+"the result to each patient status  like age, sex, comorbidities, ..."
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab.test_type,code:"
+msgid "Short name - code for the test"
+msgstr ""
+
+msgctxt "help:thoriumcorp.lab.test_type,name:"
+msgid "Test type, eg X-Ray, hemogram,biopsy..."
+msgstr ""
+
+msgctxt "help:thoriumcorp.patient.lab.test,doctor_id:"
+msgid "Doctor who Request the lab test."
+msgstr ""
+
+msgctxt "help:thoriumcorp.patient.lab.test.request.start,doctor:"
+msgid "Doctor who Request the lab tests."
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab,name:"
+msgid "Patient Lab Test Results"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.create.init,name:"
+msgid "Create Test Report Init"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:"
+msgid "Lab Test Critearea"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_agratio0"
+msgid "AG Ratio"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_albumin0"
+msgid "Albumin"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_alkalinephosphatase0"
+msgid "Alkaline Phosphatase"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_bacteria0"
+msgid "Bacteria"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_bas"
+msgid "BAS"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_bas0"
+msgid "BAS%"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_bilirubin0"
+msgid "Bilirubin"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_blood0"
+msgid "Blood"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_blood1"
+msgid "Blood"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_bloodgrouprh0"
+msgid "Blood Group & RH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_casts0"
+msgid "Casts"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_chemicalexamination0"
+msgid "Chemical Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_clarityappearance0"
+msgid "Clarity/ Appearance"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_color0"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_color1"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_color2"
+msgid "Color"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_consistency0"
+msgid "Consistency"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_creatinine0"
+msgid "Creatinine"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_crystals0"
+msgid "Crystals"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_directbilirubin0"
+msgid "Direct Bilirubin"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_eo"
+msgid "EO"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_eos0"
+msgid "EO%"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_epithelialcells0"
+msgid "Epithelial Cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_epithelialcells1"
+msgid "Epithelial Cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_esr0"
+msgid "ESR"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_fsh0"
+msgid "FSH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_gammagt0"
+msgid "Gamma GT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_globulin0"
+msgid "Globulin"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_glucose0"
+msgid "Glucose"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_gra0"
+msgid "GRA#"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_haemoglobin0"
+msgid "HGB"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_hct0"
+msgid "HCT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_indirectbilirubin0"
+msgid "Indirect Bilirubin"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_ketonebodies0"
+msgid "Ketone Bodies"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_leucocytes0"
+msgid "Leucocytes"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_lh0"
+msgid "LH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_liquefactiontime0"
+msgid "Liquefaction Time"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_lym0"
+msgid "LYM%"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_lym1"
+msgid "LYM"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mch0"
+msgid "MCH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mchc0"
+msgid "MCHC"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mcv0"
+msgid "MCV"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_microscopicexamination0"
+msgid "Microscopic Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_microscopicexamination1"
+msgid "Microscopic Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_microscopicexamination2"
+msgid "Microscopic Examination"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mon"
+msgid "MON"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mon0"
+msgid "MON%"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_morphology0"
+msgid "Morphology"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_motility0"
+msgid "Motility"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mpv"
+msgid "MPV"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_mucus0"
+msgid "Mucus"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_neu"
+msgid "NEU"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_neu0"
+msgid "NEU%"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_nitrites0"
+msgid "Nitrites"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_nonmotile0"
+msgid "Non Motile"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_nonprogressive0"
+msgid "Non Progressive"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_others0"
+msgid "Others"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_ovacyst0"
+msgid "Ova/Cyst"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_pct"
+msgid "PCT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_pdwcv"
+msgid "PDWcv"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_pdwsd"
+msgid "PDWsd"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_ph0"
+msgid "PH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_physicalexamination0"
+msgid "Physical Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_physicalexamination1"
+msgid "Physical Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_physicalexamination2"
+msgid "Physical Examination"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_platelets0"
+msgid "Platelets"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_plt0"
+msgid "PLT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_progressive0"
+msgid "Progressive"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_prolactin0"
+msgid "PROLACTIN"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_protein0"
+msgid "Protein"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_puscells0"
+msgid "Pus cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_puscells1"
+msgid "Pus cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_puscells2"
+msgid "Pus Cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rbc0"
+msgid "RBC"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rbcs0"
+msgid "RBCs"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rbcs1"
+msgid "RBCs"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rbcs2"
+msgid "RBCs"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rbcs3"
+msgid "RBC's"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rdwcv0"
+msgid "RDWcv"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_rdwsd0"
+msgid "RDWsd"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_reaction0"
+msgid "Reaction"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_report0"
+msgid "REPORT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_sgot0"
+msgid "SGOT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_sgpt0"
+msgid "SGPT"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_specificgravity0"
+msgid "Specific Gravity"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_spermatogoniccells0"
+msgid "Spermatogonic Cells"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_testosterone0"
+msgid "TESTOSTERONE"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_totalbilirubin0"
+msgid "Total Bilirubin"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_totalcount0"
+msgid "Total count"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_totalprotein0"
+msgid "Total Protein"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_tsh0"
+msgid "TSH"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_undigestedmatter0"
+msgid "Un digested matter"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_urea0"
+msgid "Urea"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_uricacid0"
+msgid "Uric Acid"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_urobilinogen0"
+msgid "Urobilinogen"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_viscosity0"
+msgid "Viscosity"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_volume0"
+msgid "Volume"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_wbc0"
+msgid "WBC"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test.critearea,name:thoriumcorp_test_critearea_wbcs0"
+msgid "WBCs"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test.units,name:"
+msgid "Lab Test Units"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:"
+msgid "Type of Lab test"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test_type,name:thoriumcorp_test_completebloodcount0"
+msgid "COMPLETE BLOOD COUNT"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_endocrinology0"
+msgid "ENDOCRINOLOGY"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_haematology0"
+msgid "HAEMATOLOGY"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_liverfunctiontest0"
+msgid "LIVER FUNCTION TEST"
+msgstr ""
+
+msgctxt ""
+"model:thoriumcorp.lab.test_type,name:thoriumcorp_test_peripheralsmearexamination0"
+msgid "PERIPHERAL SMEAR EXAMINATION"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_renalfunctiontest0"
+msgid "RENAL FUNCTION TEST"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_semenanalysis0"
+msgid "SEMEN ANALYSIS"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_stoolexamination0"
+msgid "STOOL EXAMINATION"
+msgstr ""
+
+msgctxt "model:thoriumcorp.lab.test_type,name:thoriumcorp_test_urineanalysis0"
+msgid "URINE ANALYSIS"
+msgstr ""
+
+msgctxt "model:thoriumcorp.patient.lab.test,name:"
+msgid "Patient Lab Test"
+msgstr ""
+
+msgctxt "model:thoriumcorp.patient.lab.test.request.start,name:"
+msgid "Request Patient Lab Test Start"
+msgstr ""
+
+msgctxt "model:thoriumcorp.request-test,name:"
+msgid "Request - Test"
+msgstr ""
+
+msgctxt "model:ir.action,name:act_create_lab_test"
+msgid "Lab: Create test"
+msgstr ""
+
+msgctxt "model:ir.action,name:act_patient_lab_history_form1"
+msgid "Lab: Reports"
+msgstr ""
+
+msgctxt "model:ir.action,name:thoriumcorp_action_lab_test_request"
+msgid "Lab Test Requests"
+msgstr ""
+
+msgctxt "model:ir.action,name:thoriumcorp_action_lab_unit"
+msgid "Lab Test Units"
+msgstr ""
+
+msgctxt "model:ir.action,name:thoriumcorp_action_list_test"
+msgid "Lab Test Types"
+msgstr ""
+
+msgctxt "model:ir.action,name:thoriumcorp_action_tree_lab"
+msgid "Lab Tests Results"
+msgstr ""
+
+msgctxt "model:ir.action,name:patient_lab_test_request"
+msgid "Lab: Request new order"
+msgstr ""
+
+msgctxt "model:ir.action,name:report_patient_labtest_report"
+msgid "Lab Report"
+msgstr ""
+
+msgctxt "model:ir.sequence,name:seq_thoriumcorp_lab_request"
+msgid "Lab Request"
+msgstr ""
+
+msgctxt "model:ir.sequence,name:seq_thoriumcorp_lab_test"
+msgid "Lab Test"
+msgstr ""
+
+msgctxt "model:ir.sequence.type,name:seq_type_thoriumcorp_lab_request"
+msgid "Lab Request"
+msgstr ""
+
+msgctxt "model:ir.sequence.type,name:seq_type_thoriumcorp_lab_test"
+msgid "Lab Test"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:thoriumcorp_action_lab_tree"
+msgid "Lab Tests Results"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:thoriumcorp_conf_laboratory"
+msgid "Laboratory"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:thoriumcorp_laboratory_menu"
+msgid "Laboratory"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:thoriumcorp_labtest_request"
+msgid "Lab Test Requests"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:thoriumcorp_labtest_unit"
+msgid "Lab Test Units"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:menu_thoriumcorp_action_list_test"
+msgid "Lab Test Types"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:menu_patient_lab_test_request"
+msgid "Lab: Request new order"
+msgstr ""
+
+msgctxt "model:product.category,name:product_category_labservices0"
+msgid "Lab Services"
+msgstr ""
+
+msgctxt "model:product.template,name:product_template_bloodcounttestcharges0"
+msgid "Blood count test charges"
+msgstr ""
+
+msgctxt "model:product.template,name:product_template_endocrinology0"
+msgid "Endocrinology"
+msgstr ""
+
+msgctxt "model:product.template,name:product_template_haematologycharges0"
+msgid "Haematology Charges"
+msgstr ""
+
+msgctxt ""
+"model:product.template,name:product_template_liverfunctiontestcharges0"
+msgid "Liver Function test charges"
+msgstr ""
+
+msgctxt ""
+"model:product.template,name:product_template_peripheralsmearexaminationcharges0"
+msgid "Peripheral Smear Examination Charges"
+msgstr ""
+
+msgctxt ""
+"model:product.template,name:product_template_renalfunctiontestcharges0"
+msgid "Renal Function test charges"
+msgstr ""
+
+msgctxt "model:product.template,name:product_template_semenanalysischarges0"
+msgid "Semen Analysis Charges"
+msgstr ""
+
+msgctxt ""
+"model:product.template,name:product_template_stoolexaminationcharges0"
+msgid "Stool Examination Charges"
+msgstr ""
+
+msgctxt "model:product.template,name:product_template_urineanalysischarges0"
+msgid "Urine Analysis charges"
+msgstr ""
+
+msgctxt "model:res.group,name:group_health_lab"
+msgid "Health Lab"
+msgstr ""
+
+msgctxt "model:res.group,name:group_health_lab_admin"
+msgid "Health lab Administration"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "*"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid ","
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Age"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Analyte"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Date"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Diagnosis"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Doctor:"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Female"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "ID"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "LABORATORY REPORT"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Male"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Name"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Order #"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "PU"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Pathologist"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Reference"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Remarks"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Results"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Sex"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Signature"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Unit"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Value"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "Warn"
+msgstr ""
+
+msgctxt "report:patient.labtest.report:"
+msgid "____________________________"
+msgstr ""
+
+msgctxt "selection:thoriumcorp.patient.lab.test,state:"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "selection:thoriumcorp.patient.lab.test,state:"
+msgid "Draft"
+msgstr ""
+
+msgctxt "selection:thoriumcorp.patient.lab.test,state:"
+msgid "Ordered"
+msgstr ""
+
+msgctxt "selection:thoriumcorp.patient.lab.test,state:"
+msgid "Tested"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab.test.create.init:"
+msgid "Create Tests"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab.test.create.init:"
+msgid "Do you want to generate the test(s) ?"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab.test.critearea:"
+msgid "Reference Value / Range"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab.test_type:"
+msgid "Extra Info"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab.test_type:"
+msgid "Main Info"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab:"
+msgid "Diagnosis"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab:"
+msgid "Extra Info"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab:"
+msgid "Main Info"
+msgstr ""
+
+msgctxt "view:thoriumcorp.lab:"
+msgid "Notes"
+msgstr ""
+
+msgctxt "wizard_button:thoriumcorp.lab.test.create,start,create_lab_test:"
+msgid "Create Test Order"
+msgstr ""
+
+msgctxt "wizard_button:thoriumcorp.lab.test.create,start,end:"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "wizard_button:thoriumcorp.patient.lab.test.request,start,end:"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "wizard_button:thoriumcorp.patient.lab.test.request,start,request:"
+msgid "Request"
+msgstr ""

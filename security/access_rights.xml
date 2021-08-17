@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--                                                                       -->
+<!--    Copyright (C) 2020-2030 Thorium Corp FP <help@thoriumcorp.website  -->
+<!--                                                                       -->
+
+<odoo>
+    <data>
+
+<!-- BEGIN lab ADMINISTRATION GROUP ACCESS RIGHTS -->
+
+<!-- Create the Commed lab Administration group -->
+        <record model="res.group" id="group_thoriumcorp.lab_admin">
+            <field name="name">Thorium Corp lab Administration</field>
+        </record>
+
+<!-- Assign the Group to the "admin" user -->
+
+        <record model="res.user-res.group" id="user_admin_group_thoriumcorp.lab">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+        </record>
+
+<!-- Access to Menus -->
+
+        <record model="ir.ui.menu-res.group" id="menu_thoriumcorp.group_thoriumcorp.lab_conf_admin">
+            <field name="menu" ref="thoriumcorp.conf_laboratory"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+        </record>
+
+        <record model="ir.ui.menu-res.group" id="menu_thoriumcorp.group_thoriumcorp.lab_admin">
+            <field name="menu" ref="thoriumcorp.laboratory_menu"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+        </record>
+
+<!-- Access rights to models for the thoriumcorp.lab admin group -->
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_create_init_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.create.init')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_critearea_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.critearea')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_type_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test_type')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_units_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.units')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_patient_lab_test_admin">
+            <field name="model" search="[('model', '=', 'thoriumcorp.patient.lab.test')]"/>
+            <field name="group" ref="group_thoriumcorp.lab_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- END OF lab ADMINISTRATION GROUP ACCESS RIGHTS -->
+
+
+<!-- BEGIN DEFAULT ACCESS RIGHTS -->
+
+<!-- Default access rights to models -->
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_create_init">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.create.init')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_critearea">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.critearea')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_type">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test_type')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_units">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.units')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_patient_lab_test">
+            <field name="model" search="[('model', '=', 'thoriumcorp.patient.lab.test')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+<!-- END OF DEFAULT ACCESS RIGHTS -->
+
+
+<!-- BEGIN DOCTOR GROUP ACCESS RIGHTS -->
+
+
+<!-- Default access rights to models -->
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_create_init_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.create.init')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_critearea_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.critearea')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_type_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test_type')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_units_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.units')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_patient_lab_test_doctor">
+            <field name="model" search="[('model', '=', 'thoriumcorp.patient.lab.test')]"/>
+            <field name="group" ref="thoriumcorp.group_thoriumcorp.doctor"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- END OF DOCTOR GROUP ACCESS RIGHTS -->
+
+
+<!-- BEGIN lab USER GROUP ACCESS RIGHTS -->
+
+<!-- Create the demo_lab user -->
+        <record model="res.user" id="user_demo_lab">
+            <field name="name">Commed Lab</field>
+            <field name="login">demo_lab</field>
+            <field name="password">gnusolidario</field>
+        </record>
+
+<!-- Create the Commed lab group -->
+        <record model="res.group" id="group_thoriumcorp.lab">
+            <field name="name">Commed Lab</field>
+        </record>
+
+<!-- Assign the Group to the "demo_lab" user -->
+
+        <record model="res.user-res.group" id="user_demo_lab_group_thoriumcorp.lab">
+            <field name="user" ref="user_demo_lab"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+        </record>
+
+<!-- Access to Menus -->
+
+        <record model="ir.ui.menu-res.group" id="menu_thoriumcorp.group_thoriumcorp.lab">
+            <field name="menu" ref="thoriumcorp.thoriumcorp.menu"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+        </record>
+        <record model="ir.ui.menu-res.group" id="menu_lab_group_thoriumcorp.lab">
+            <field name="menu" ref="thoriumcorp.laboratory_menu"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+        </record>
+
+<!-- Access rights to models for the thoriumcorp.lab admin group -->
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_create_init_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.create.init')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_critearea_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.critearea')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_type_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test_type')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_test_units_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.lab.test.units')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_thoriumcorp.lab_patient_lab_test_lab">
+            <field name="model" search="[('model', '=', 'thoriumcorp.patient.lab.test')]"/>
+            <field name="group" ref="group_thoriumcorp.lab"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+<!-- END OF lab USER GROUP ACCESS RIGHTS -->
+
+    </data>
+</odoo>
